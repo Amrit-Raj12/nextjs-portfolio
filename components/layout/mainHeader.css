@@ -1,0 +1,91 @@
+.Hnav {
+  height: 50px;
+  width: 100%;
+  background-color: #181135;
+  position: relative;
+}
+
+.Hnav > .Hnav-header {
+  display: inline;
+}
+
+.Hnav > .Hnav-header > .Hnav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #00fff3;
+  padding: 10px 10px 10px 10px;
+  font-family: "Bungee Inline";
+}
+
+.Hnav > .Hnav-btn {
+  display: none;
+}
+
+.Hnav > .Hnav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.Hnav > .Hnav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #00fff3;
+  font-family: "Bungee Inline";
+}
+
+.Hnav > .Hnav-links > a:hover {
+  background-color: rgba(105, 247, 245, 0.3);
+}
+
+.Hnav > #Hnav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .Hnav > .Hnav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .Hnav > .Hnav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .Hnav > .Hnav-btn > label:hover,
+  .Hnav #Hnav-check:checked ~ .Hnav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .Hnav > .Hnav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #fff;
+  }
+  .Hnav > .Hnav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #00fff3;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .Hnav > .Hnav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .Hnav > #Hnav-check:not(:checked) ~ .Hnav-links {
+    height: 0px;
+  }
+  .Hnav > #Hnav-check:checked ~ .Hnav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Neonderthaw&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Luckiest+Guy&family=Neonderthaw&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Libre+Barcode+39+Text&family=Luckiest+Guy&family=Neonderthaw&display=swap");
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.55s ease, border-color 0.55s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.head_container {
+  height: 580px;
+}
+
+.head_box {
+  background-image: url(../public/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+
+.cro_col_box {
+  background: rgba(28, 20, 61, 0.5);
+}
+
+.cro_row_box {
+  height: 580px;
+}
+
+.cro_title_box {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.cro_text {
+  color: #00fff3 !important;
+  font-size: 1.5rem;
+  font-family: "Bungee Inline";
+  font-weight: 900;
+}
+
+.cro_title {
+  color: #00fff3 !important;
+  margin-top: 0.2rem !important;
+  font-family: "Bungee Inline";
+  font-size: 65px !important;
+}
+
+.button {
+  position: relative;
+  margin-top: 5%;
+  background: #00fff3;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #000;
+  box-shadow: 4px 4px 0px 0px white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  left: 4px;
+  top: 4px;
+  box-shadow: 0 0 0 0 white;
+}
+
+.banner_box {
+  /* background: #00fff3; */
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.Tilt_inner {
+  width: 300px;
+  border: 3px solid #00fff3;
+  height: 420px;
+  position: relative;
+  right: -180px;
+  top: 40px;
+}
+
+.about_box {
+  position: relative;
+  height: 580px;
+}
+
+.about_col {
+  background-image: url(../public/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+
+.about_inner_row {
+  background: rgba(28, 20, 61, 0.5);
+  height: 580px;
+}
+
+.about_text_box {
+  padding: 60px;
+}
+
+.about_text_title {
+  color: #00fff3 !important;
+  margin-top: 0.2rem !important;
+  font-family: "Bungee Inline";
+  font-size: 65px !important;
+}
+
+.about_text_para {
+  color: #00fff3 !important;
+  font-size: 1.2rem;
+  font-family: "Bungee Inline";
+  font-weight: 900;
+}
+
+.heading_container {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: 580px;
+}
+
+.form_container {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: 580px;
+}
+
+/* .project_box {
+  position: relative;
+  height: 580px;
+}
+
+.proj_head_box {
+  background-image: url(../public/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  text-align: center;
+}
+
+.proj_Tilt_inner {
+  width: 260px;
+  border: 3px solid #00fff3;
+  height: 260px;
+  position: relative;
+  right: -180px;
+  top: 40px;
+} */
+/* .img {
+  width: 100%;
+  height: 400px;
+} */
+
+.project_box {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* background-image: url(../public/5.jpg); */
+  background: rgba(28, 20, 61);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/* .project_Inner_box {
+  background: rgba(28, 20, 61, 0.5);
+} */
+
+.project_text {
+  width: 65%;
+}
+
+.project_title {
+  font-size: 1.2rem;
+  font-family: "Bungee Inline";
+  font-weight: 900;
+  color: #00fff3 !important;
+}
+
+.project_desc {
+  font-size: 1rem;
+  font-family: "Bungee Inline";
+  font-weight: 600;
+  color: #00fff3 !important;
+}
+
+.project_desc {
+  margin: 20px 0px;
+}
+
+.project_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid #00fff3;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.project_browser {
+  height: 20px;
+  background-color: #00fff3;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+
+.project_circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgba(28, 20, 61);
+}
+
+.project_img {
+  width: 380px;
+  transition: all 5s ease;
+  height: 100%;
+}
+
+.project:hover .project_img {
+  transform: translateY(-100%);
+}
+
+/* Achievement */
+.achievement_box {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* background-image: url(../public/5.jpg); */
+  background: rgba(28, 20, 61);
+  text-align: center;
+}
+
+.achievement_ttl_desc {
+  position: relative;
+  top: -80%;
+  color: white;
+}
+
+/* .achievement_Inner_box {
+  background: rgba(28, 20, 61, 0.5);
+} */
+
+.achievement_text {
+  width: 65%;
+}
+
+.achievement_title {
+  font-size: 1.2rem;
+  font-family: "Bungee Inline";
+  font-weight: 900;
+  color: #00fff3 !important;
+}
+
+.achievement_desc {
+  font-size: 1rem;
+  font-family: "Bungee Inline";
+  font-weight: 600;
+  color: #00fff3 !important;
+}
+
+.achievement_desc {
+  margin: 20px 0px;
+}
+
+.achievement_list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.achievement {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 2px solid #00fff3;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.achievement_browser {
+  height: 20px;
+  background-color: #00fff3;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+
+.achievement_circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgba(28, 20, 61);
+}
+
+.achievement_img {
+  width: 100%;
+  /* transition: all 10s ease; */
+  height: 100%;
+  opacity: 0.5;
+}
+
+.achievement:hover .achievement_img {
+  /* transform: translateY(-100%); */
+}
+
+.achievement_ttl_desc {
+  position: relative;
+  top: -80%;
+  color: white;
+}
+
+.blog_container {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background-image: url(../public/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+
+.collapse {
+  background: rgba(28, 20, 61, 0.5) !important;
+  border: 1px solid #00fff3 !important;
+}
+
+.blog_container > h1 {
+  font-size: 0.8rem;
+  font-family: "Bungee Inline";
+  font-weight: 400;
+  color: #00fff3 !important;
+}
+
+.blog_header {
+  font-size: 0.8rem;
+  font-family: "Bungee Inline";
+  font-weight: 400;
+  color: #00fff3 !important;
+}
+
+.contact {
+  height: 75vh;
+  position: relative;
+}
+
+.contact_bg {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  background-color: aquamarine;
+}
+
+.contact_wrapper {
+  display: flex;
+  padding: 50px;
+}
+
+.contact_left {
+  flex: 1;
+}
+
+.contact_right {
+  flex: 1;
+}
+/* Slider */
